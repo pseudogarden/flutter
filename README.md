@@ -17,12 +17,30 @@ This project focuses on implementing the flutterwave rave package for node.js ca
 
 Alongside the ravepay node details, the ravepay api [documentation](https://developer.flutterwave.com/v2.0/reference#) will also be relied upon heavily during this project.
 
-## Setup
+## :wrench: Installation
+Clone repo and navigate to project
+```
+git clone https://github.com/pseudogarden/flutter.git && cd flutter
+```
+Install latest version of node
+```
+nvm install
+```
+Install dependencies
+```
+npm i
+```
+Run development server
+```
+npm run start:dev
+```
+
+## :electric_plug: Setup
 A lot of basics setups can be ignored, such as connecting to a real database, unit testing, orm setups, middlewares, data validations etc. Every data point used in this project will be controlled and created as needed.
 
 The project will be a small plant store that needs to use flutterwave to handle its payments.
 
-### Database
+### :floppy_disk: Database
 Our databse will consist of mock data of three specific types:
 - *Customer* - A customer who will use the payment platform to by a plant
 ```javascript
@@ -52,7 +70,7 @@ export const plantA = {
 };
 ```
 
-## Subaccounts
+## :credit_card: Subaccounts
 My first api test will be adding subaccounts to the flutterwave dtabase. subaccounts are accounts of suppliers who you want to get a cut from the sale of an item. These accounts are good to setup when working on a marketplace application that acts as a link between customers and suppliers.
 
 For our application, the plant store will get 20% off  every transaction for a plant, while the suppliers get 80%.
