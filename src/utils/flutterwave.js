@@ -21,7 +21,7 @@ const Flutterwave = {
       const account = await rave.Subaccount.create({
         ...payload,
         split_type: 'percentage',
-        split_value: 20.00
+        split_value: '0.2'
       });
       console.log(payload);
       return account;
