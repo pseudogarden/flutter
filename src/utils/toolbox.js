@@ -56,7 +56,7 @@ const Toolbox = {
       business_contact: `${holder.firstName} ${holder.lastName}`,
       business_contact_mobile: holder.phoneNumber,
       business_mobile: holder.phoneNumber,
-      country: 'NG'
+      meta: [{ metaname: 'MarketplaceID', metavalue: 'ggs-920900' }]
     };
     return holder;
   }

@@ -1,13 +1,13 @@
-import Ravepay from 'ravepay';
+import Ravepay from 'flutterwave-node';
 import env from '../env';
 import ApiError from './apiError';
 
 const {
   FLUTTERWAVE_PUBLIC,
-  FLUTTERWAVE_SECRET
+  FLUTTERWAVE_SECRET,
 } = env;
 
-const rave = new Ravepay(FLUTTERWAVE_PUBLIC, FLUTTERWAVE_SECRET, false);
+const rave = new Ravepay(FLUTTERWAVE_PUBLIC, FLUTTERWAVE_SECRET, 'https://ravesandboxapi.flutterwave.com');
 
 const Flutterwave = {
   /**
@@ -23,7 +23,6 @@ const Flutterwave = {
         split_type: 'percentage',
         split_value: '0.2'
       });
-      console.log(payload);
       return account;
     } catch (error) {
       throw new ApiError(400, error.message);
