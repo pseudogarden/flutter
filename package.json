@@ -41,7 +41,7 @@
     "express-session": "^1.15.6",
     "flutterwave-node": "^1.0.2",
     "joi-password-complexity": "^3.1.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "method-override": "^2.3.10",
     "methods": "^1.1.2",
     "morgan": "^1.9.1",
